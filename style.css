@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Muli', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.container-countdown, .container-inputs, .container-buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.container-countdown .label{
+    width: 20%;
+    font-size: 30px;
+    padding: 5px 10px;
+}
+
+.container-inputs input{
+    border: none;
+    font-size: 50px;
+    width: 90px;
+    height: 50px;
+    text-align: center;
+}
+
+.container-inputs input:focus{
+    outline: none;
+    scroll-behavior: unset;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.container-inputs .colon{
+    font-size: 30px;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.container-buttons button{
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.container-buttons .start{
+    background-color: green;
+}
+
+.container-buttons .stop{
+    display: none;
+    background-color: orange;
+}
+
+.container-buttons .reset{
+    background-color: orangered;
+}
+
